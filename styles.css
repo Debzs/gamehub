@@ -12,7 +12,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #ff6f00;
+  background-color: #000;
   padding: 10px 20px;
   position: sticky;
   top: 0;
@@ -40,7 +40,7 @@ body {
 
 .nav-links a:hover {
   background-color: #ffffff;
-  color: #ff6f00;
+  color: #084d55;
   border-radius: 5px;
 }
 
@@ -59,7 +59,7 @@ body {
 
 .search-bar button {
   padding: 5px 10px;
-  background-color: #f8a300;
+  background-color: #e13c3c;
   color: #ffffff;
   border: none;
   border-radius: 5px;
@@ -68,12 +68,15 @@ body {
 }
 
 .search-bar button:hover {
-  background-color: #ff6f00;
+  background-color: #941111;
 }
 
 /* Hero Section */
 .hero {
-  background: linear-gradient(to bottom right, #ff6f00, #f8a300);
+  background-image: url("https://res.cloudinary.com/dtsjiqrgd/image/upload/v1736367495/l2atya53y6vmvvnvuehd.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 450px;
   color: #ffffff;
   text-align: center;
   padding: 60px 20px;
@@ -82,11 +85,14 @@ body {
 .hero h2 {
   font-size: 3em;
   margin-bottom: 10px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  font-size: 70px;
 }
 
 .hero p {
   font-size: 1.2em;
   line-height: 1.6;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 /* Featured Games Section */
@@ -132,6 +138,7 @@ body {
 .game-card:hover {
   transform: translateY(-10px);
   box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
 }
 
 /* Reviews and News Sections */
@@ -147,10 +154,58 @@ body {
   gap: 20px;
 }
 
+.flex-grow {
+  flex-grow: 1;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: scroll;
+}
+
+.details-image {
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  box-sizing: border-box;
+  margin-bottom: 30px;
+}
+
+.game-details {
+  padding: 0px 50px;
+}
+
+.game-details h2,
+.guides-section h3 {
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.game-details h2::after,
+.guides-section h3::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 40px;
+  height: 4px;
+  bottom: -10px;
+  background: #fff;
+}
+
+.guides-grid,
+.top-rated,
+.platforms-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
 .review-card,
 .news-card {
-  background-color: #f8a300;
-  color: #ffffff;
+  background-color: #fff;
+  color: #000;
   border-radius: 10px;
   padding: 15px;
   text-align: center;
@@ -169,7 +224,9 @@ body {
 .review-card:hover,
 .news-card:hover {
   transform: translateY(-10px);
-  background-color: #ff6f00;
+  background-color: #e13c3c;
+  cursor: pointer;
+  color: #fff;
 }
 
 /* Guides and Forums Sections */
@@ -181,7 +238,7 @@ body {
 .guides-section h4,
 .forums-section h4 {
   font-size: 1.8em;
-  color: #f8a300;
+  color: #e13c3c;
   margin-bottom: 15px;
 }
 
@@ -222,7 +279,7 @@ body {
 .about-page h2,
 .contact-page h2 {
   font-size: 2.5em;
-  color: #ff6f00;
+  color: #e13c3c;
   margin-bottom: 20px;
 }
 
@@ -232,7 +289,7 @@ body {
   border-radius: 50%;
   object-fit: cover;
   margin-bottom: 20px;
-  border: 3px solid #f8a300;
+  border: 3px solid #e13c3c;
 }
 
 .contact-page form {
@@ -253,15 +310,15 @@ body {
 }
 
 .contact-page button {
-  background-color: #ff6f00;
+  background-color: #e13c3c;
   color: #ffffff;
   font-weight: bold;
-  cursor: pointer;
   transition: background-color 0.3s;
+  cursor: pointer;
 }
 
 .contact-page button:hover {
-  background-color: #f8a300;
+  background-color: #941111;
 }
 
 /* Footer */
