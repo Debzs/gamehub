@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Discover the latest game reviews, news, and updates from the gaming world."
+    />
+    <meta name="keywords" content="Game reviews, Gaming news, Tips, Forums" />
+    <title>Game Hub - Reviews and News</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header class="navbar">
+      <h1>Game Hub</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#" onclick="navigateTo('home')">Home</a></li>
+          <li><a href="#" onclick="navigateTo('reviews')">Game Reviews</a></li>
+          <li><a href="#" onclick="navigateTo('news')">News and Updates</a></li>
+          <li>
+            <a href="#" onclick="navigateTo('guides')">Guides and Tips</a>
+          </li>
+          <li>
+            <a href="#" onclick="navigateTo('forums')">Communities/Forums</a>
+          </li>
+          <li><a href="#" onclick="navigateTo('about')">About</a></li>
+          <li><a href="#" onclick="navigateTo('contact')">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="search-bar">
+        <input
+          id="search-input"
+          type="text"
+          placeholder="Search games, news..."
+        />
+        <button id="search-button">Search</button>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+      <!-- Home Page -->
+      <section id="home" class="page">
+        <div class="hero">
+          <h2>Welcome to Game Hub</h2>
+          <p>
+            Discover the latest game reviews, news, and updates from the gaming
+            world.
+          </p>
+        </div>
+
+        <div class="featured-section">
+          <h3>Featured Games</h3>
+          <div class="game-slider">
+            <!-- Dynamic game cards will load here -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Game Reviews Page -->
+      <section id="reviews" class="page" style="display: none">
+        <div class="reviews-section">
+          <h3>Game Reviews</h3>
+          <div class="review-grid">
+            <!-- Dynamic reviews will load here -->
+          </div>
+          <div class="review-categories">
+            <p id="reviews-placeholder" style="display: none">
+              No reviews available. Check back later!
+            </p>
+            <h4>Top Rated Games</h4>
+            <div class="top-rated">
+              <!-- Top rated games will load here -->
+            </div>
+
+            <h4>By Genres</h4>
+            <div class="by-genres">
+              <!-- Games by genres will load here -->
+            </div>
+
+            <h4>By Platform</h4>
+            <div class="by-platform">
+              <!-- Games by platform will load here -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- News and Updates Page -->
+      <section id="news" class="page" style="display: none">
+        <div class="news-section">
+          <h3>Gaming News</h3>
+          <div class="news-grid">
+            <p id="news-placeholder" style="display: none">
+              No news articles available.
+            </p>
+            <!-- Dynamic news articles will load here -->
+          </div>
+        </div>
+      </section>
+
+      <section id="guides" class="page" style="display: none">
+        <div class="guides-section">
+          <h3>Gaming Guides</h3>
+          <div class="guides-grid">
+            <p id="guides-placeholder" style="display: none">
+              No news articles available.
+            </p>
+            <!-- Dynamic news articles will load here -->
+          </div>
+        </div>
+      </section>
+
+      <section id="forums" class="page" style="display: none">
+        <div class="guides-section">
+          <h3>Gaming Communities/Forums</h3>
+          <div class="platforms-grid">
+            <p id="guides-placeholder" style="display: none">
+              No news articles available.
+            </p>
+            <!-- Dynamic news articles will load here -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Guides and Tips Page -->
+      <section id="guides2" class="page" style="display: none">
+        <div class="guides-section">
+          <h3>Guides and Tips</h3>
+          <h4>Game Strategy</h4>
+          <div class="game-strategy">
+            <!-- Game strategy content -->
+          </div>
+
+          <h4>Beginner Tips</h4>
+          <div class="beginner-tips">
+            <!-- Beginner tips content -->
+          </div>
+
+          <h4>Advanced Techniques</h4>
+          <div class="advanced-techniques">
+            <!-- Advanced techniques content -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Communities/Forums Page -->
+      <section id="forums3" class="page" style="display: none">
+        <div class="forums-section">
+          <h3>Communities and Forums</h3>
+          <h4>General Discussion</h4>
+          <div class="general-discussion">
+            <!-- General discussion content -->
+          </div>
+
+          <h4>Game Recommendations</h4>
+          <div class="game-recommendations">
+            <!-- Game recommendations content -->
+          </div>
+
+          <h4>Troubleshooting</h4>
+          <div class="troubleshooting">
+            <!-- Troubleshooting content -->
+          </div>
+
+          <h4>Tips and Tricks</h4>
+          <div class="tips-tricks">
+            <!-- Tips and tricks content -->
+          </div>
+        </div>
+      </section>
+
+      <!-- About Page -->
+      <section id="about" class="page" style="display: none">
+        <div class="about-page">
+          <h2>About Us</h2>
+          <div class="team-section">
+            <img
+              src="./imoleayo-ashaolu.jpg"
+              alt="Imoleayo Ashaolu"
+              class="team-photo"
+            />
+            <p>
+              Hi, I am Imoleayo Ashaolu, the creator of Game Hub. I am
+              passionate about gaming and technology, and I created this
+              platform to connect gamers worldwide.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Page -->
+      <section id="contact" class="page" style="display: none">
+        <div class="contact-page">
+          <h2>Contact Us</h2>
+          <h4>Support</h4>
+          <p>
+            For support, reach us at
+            <a href="mailto:support@gamehub.com">support@gamehub.com</a>.
+          </p>
+
+          <h4>Feedback Form</h4>
+          <form>
+            <input
+              id="contact-name"
+              type="text"
+              placeholder="Your Name"
+              required
+            />
+            <input
+              id="contact-email"
+              type="email"
+              placeholder="Your Email"
+              required
+            />
+            <textarea
+              id="contact-message"
+              placeholder="Your Message"
+              rows="4"
+              required
+            ></textarea>
+            <button type="submit">Send Feedback</button>
+          </form>
+
+          <h4>Follow Us</h4>
+          <div class="social-links">
+            <a href="#">Facebook</a> | <a href="#">Twitter</a> |
+            <a href="#">Instagram</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2024 Game Hub. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

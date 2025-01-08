@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game Details</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <h1>Game Hub</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#reviews">Game Reviews</a></li>
+          <li><a href="index.html#news">News and Updates</a></li>
+          <li><a href="index.html#guides">Guides and Tips</a></li>
+          <li><a href="index.html#forums">Communities/Forums</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="game-details">
+        <p>Loading game details...</p>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2024 Game Hub. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+    <script>
+      // Extract gameId from URL
+      const urlParams = new URLSearchParams(window.location.search);
+      const gameId = urlParams.get("gameId");
+      if (gameId) {
+        fetchGameDetails(gameId);
+      } else {
+        document.querySelector(".game-details").innerHTML =
+          "<p>No game details found.</p>";
+      }
+    </script>
+  </body>
+</html>
